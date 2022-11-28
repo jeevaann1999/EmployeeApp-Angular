@@ -5,72 +5,18 @@
             <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Employee Code</th>
                     <th scope="col">Name</th>
                     <th scope="col">Designation</th>
                     <th scope="col">Salary</th>
+                    <th scope="col">Company</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Kevin</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Rose</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Mary</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Jeeva</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>Ria</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>Anna</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>Tom</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>Mathew</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>Kate</td>
-                    <td>Software Engineer Trainee</td>
-                    <td>25,000</td>
+                  <tr *ngFor="let i of data">
+                    <td>{{i.name}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.salary}}</td>
+                    <td>{{i.company}}</td>
                   </tr>
                 </tbody>
               </table>
