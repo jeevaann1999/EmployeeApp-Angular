@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./delete-employee.component.css']
 })
 export class DeleteEmployeeComponent {
+employeeCode=""
 
+readValues=()=>{
+  let data:any={
+    "employeeCode":this.employeeCode
+  }
+  console.log(data)
+}
 }

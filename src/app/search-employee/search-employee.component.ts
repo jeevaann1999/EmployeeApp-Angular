@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-employee.component.css']
 })
 export class SearchEmployeeComponent {
+  employeeCode=""
 
+  readValues=()=>{
+    let data:any={
+      "employeeCode":this.employeeCode
+    }
+    console.log(data)
+  }
 }
